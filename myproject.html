@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbag-dark bg-dark">
+    <a class="navbar-brand" href=""><img src="images/villa.jpg" class="img-thumbnails" width="50" alt="">SK interiors</a>
+    <button class="navbar-toggler" data-target="#nav" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" collapse navbar-collapse" id="nav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-items">
+            <a class="nav-link text-white" href="" data-toggle="collapse">HOME</a>
+        </li>
+        <li class="nav-items">
+            <a class="nav-link text-white" href="about.html">ABOUTUS</a>
+        </li>
+        <li class="nav-items">
+            <a class="nav-link text-white" href="contact.html">CONTACTUS</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link text-white" href="gallery.html">GALLERY</a>
+        </li>
+    </ul>
+    <div class="m-2">
+    <button class="btn btn-primary" data-target="#login" data-toggle="modal">signup</button>
+    <button class="btn btn-success" data-target="#signin" data-toggle="model">signin</button>
+</div>
+</div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-caption py-5">
+      <h1 class="display-3">SK INTERIORS</h1>
+      <h3>future is our's</h3>
+      <button class="btn btn-primary btn-lg">Getstarted</button>
+      <button class="btb btn-success btn-lg">viewmore</button>
+    </div>
+    <div class="carousel-item active">
+      <img src="images/livingroom1.jpg" height=450 class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/bedr3.jpg" height=450 class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/kit2.jpg"  height=450 class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/mod.jpg" height=450 class="d-block w-100"  alt="...">          
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="modal fade" id="login">
+  <div class="modal-dialog modal-sm">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h3 class="modal-title">Login-Form</h3>
+  <button class="close" data-dismiss="modal">&times;</button>
+  </div>
+ <div class="modal-body">
+  
+  <form class="m ml-auto mx-auto needs-validation " novalidate>
+  <div class="container bg-white py-5">
+  <div class="row">
+  <div class="col">
+ 
+  <div class="form-group">
+  <label for="user">Username</label>
+ 
+  <span class="input-group-addon">
+ 
+  <i class="fa fa-user" aria-hidden="true"></i>
+  </span>
+ 
+  <input type="text" id="user" class="form-control" required>
+  <div class="invalid-feedback">username is invalid</div>
+  </div>
+ 
+  </div>
+  <div class="col">
+  <div class="form-group">
+  <label for="pass">Password</label>
+  <span class="input-group-addon" id="addon-wrapping">
+  <i class="fa fa-user" aria-hidden="true"></i>
+  </span>
+ 
+  <input type="password" id="pass" class="form-control" required>
+  <small class="invalid-feedback">Please enter the valid password</small>
+  </div>
+ </div>
+ </div>
+  <div class="form-group">
+  <label for="pass">Email-id</label>
+  <input type="email" id="pass" class="form-control" required>
+  </div>
+  <div class="form-group">
+ <label for="gender">Gender</label>
+ <div class="form-check-inline">
+ <input type="radio" name="gender" id="gen" class="form-check-input">
+ <label class="form-check-label" for="gen">M</label>
+ </div>
+ <div class="form-check-inline">
+ <input type="radio" name="gender" id="r" class="form-check-input">
+ <label class="form-check-label" for="r">F</label>
+ </div>
+ </div>
+ <div class="form-group">
+ <div class="form-check">
+ <input type="checkbox" id="box" class="form-check-input">
+ <label for="box" class="form-check-label">RememberMe</label>
+ </div>
+ </div>
+  <button type="submit" class="btn btn-success btn-lg w-100">Submit</button>
+ </div>
+ </form>
+ </div>
+  </div>
+  </div>
+  </div>
+ <div class="modal" id="signin">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h3 class="modal-title">signin</h3>
+ <button class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+  <form>
+  <label for="email">Email</label>
+  <input type="email" id="email" class="form-control" required>
+ 
+ 
+  <label for="pass">Password</label>
+  <input type="password" id="pass" class="form-control">
+  <button class="btn btn-success">Submit</button>
+  <button class="btn btn-success" data-dismiss="modal">Close</button>
+ 
+  </form>
+  </div>
+  </div>
+  </div>
+ </div>
+
+
+
+
+
+
+
+<!--our team-->
+<div class="container">
+    <div class="jumbotron m-5 bg-dark">
+    <h3 class="text-primary text-center my-3 font-weight-italic">Our works</h3>
+    <div class="row">
+    <div class="col-3 m-4">
+    <div class="card my-5 ml-8" style="width: 18rem;">
+    <img src="images/mod3.jpg" class="img-thumbnail w-25 mx-auto" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="cardtext m-4">living environments that are comfortable, safe and aesthetically pleasing. we design interior spaces for homes, offices, restaurants, schools and colleges, retail outlets and public buildings, such as hospitals and libraries
+   the card's content.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-3 m-4">
+    <div class="card my-5 ml-8" style="width: 18rem;">
+    <img src="images/livgrom4.jpg" class="img-thumbnail w-25 mx-auto" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="cardtext m-3"> the key responsibilities include visualizing and sketching design plans as per client goals, sourcing products and materials, determining costs and inspecting construction to ensure alignment with design specifications are met.
+   ulk of the card's content.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-2 m-4">
+    <div class="card my-5 ml-8" style="width: 18rem;">
+    <img src="images/kit3.jpg" class="img-thumbnail w-25 mx-auto" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="cardtext m-2">Interior decorators help determine the look and feel of a client's home by selecting and placing decorative elements such as paint, textiles, and furniture. This client-facing role involves meeting directly with clients to get a sense of how they intend to use their space and how they want it to feel.
+   the card's content.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+     </div> 
+    <!-- Footer -->
+<footer class="page-footer font-small bg-dark text-white pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">SK INTERIORS</h6>
+        <p>On a daily basis, Interior Designers use computer-aided drafting (CAD) and related software to produce construction documents. They coordinate with other professionals, such as contractors, architects, engineers, and plumbers, to ensure job success</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase  mb-4 font-weight-bold">Products</h6>
+        <p>
+          <a href="#!" class="text-white">design select gallaries</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">furniture</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">Basins</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">glass ceilings</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+        <p>
+          <a href="#!" class="text-white">IKEAplace</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">homestyler</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i> hyderabad, nizampet, telengana</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> hemaparuchuri@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 91 9133468729</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 91 9876543212</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/">
+            <strong class="text-white">skinteriors.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
